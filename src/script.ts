@@ -113,5 +113,7 @@ const loop = () => {
 export const update = (_name: string, _title: string, _image: HTMLImageElement | undefined) => {
   name = _name
   title = _title
-  background = _image
+  if (_image) {
+    background = _image
+  }
 }
